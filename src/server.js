@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 
 //cross-orign request handler
 const corsOptions = {
-  origin:'https://shimmering-wisp-4798ab.netlify.app',
+  origin:'*',
   methods:['GET','POST'],
   allowedHeaders:['content-Type','Authorization']
 };
