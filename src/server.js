@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 
 //cross-orign request handler
 const corsOptions = {
-  origin:'*',
+  origin:'https://shimmering-wisp-4798ab.netlify.app',
   methods:['GET','POST'],
   allowedHeaders:['content-Type','Authorization']
 };
@@ -18,6 +18,7 @@ const corsOptions = {
 
 //CORS-CROSS ORIGIN RESOURCE SHARING FOR USING BY ANOTHER DEVICES OR ORIGIN
 app.use(cors(corsOptions));
+// app.use(cors());
 // app.use(cors());
 //TO PARSE THE REQUEST BODY 
 app.use(bodyParser.json());
